@@ -8,4 +8,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Link
 
-https://hn-angular-6epszhqfd.now.sh/
+https://hn-angular.now.sh
