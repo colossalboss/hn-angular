@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: #f6f6ef;
+  background-color: #ff6600;
+
+}
+
+table {
+  width: 100%;
+}
+
+.nav-row a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.header {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.links a {
+  padding: .3rem;
+}
+
+.bold {
+  font-weight: 900 !important;
+  font-size: 1.05rem;
+}
+
+.logo {
+  border: 1px solid #fff;
+}
+
+.login {
+  text-align: right;
+  padding: 0.2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .container{
+    width: 100%;
+  }
+
+  .pagetop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    margin: 0;
+  }
+
+  .links a {
+    padding: 0 .5rem 0 0;
+  }
+}

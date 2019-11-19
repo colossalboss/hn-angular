@@ -1,0 +1,95 @@
+
+  <div class="container">
+    <table>
+      <tbody>
+        <tr class="main-row">
+          <td>
+            <table>
+              <tbody>
+                <div *ngFor="let item of news?.data.hn.topStories">
+                <tr >
+                  <td class="num">
+                    <span>{{ news.data.hn.topStories.indexOf(item) + 1 }}</span>
+                  </td>
+                  <td class="">
+                    <a class="icon" href="#">▲</a>
+                  </td>
+                  <td>
+                    <a href="#">{{ item.title }} </a>
+                    <span><a class="grey" href="#">({{ item.url | shortUrl }})</a></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"></td>
+                  <td class="sm-font">
+                    <span class="score">{{ item.score }} points</span>
+                    by
+                    <a href="#">{{ item.by.id }} </a>
+
+                    <span class="time">
+                      <a href="#">{{ item.timeISO | duration }}</a>
+                    </span>
+                    |
+                    <a href="#">hide</a>
+                    |
+                    <a href="#">{{ item.descendants }}  comments</a>
+                  </td>
+                </tr>
+                <tr class="spacer"></tr>
+                </div>
+                <div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td colspan="2"></td>
+                        <td>
+                          <a href="#">More</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<footer>
+  <div class="footer">
+    <hr>
+    <div class="footer-links">
+      <span>
+        <a href="#">Guidelines</a>
+        |
+        <a href="#">FAQ</a>
+        |
+        <a href="#">Support</a>
+        |
+        <a href="#">API</a>
+        |
+        <a href="#">Security</a>
+        |
+        <a href="#">Lists</a>
+        |
+        <a href="#">Bookmarklet</a>
+        |
+        <a href="#">Legal</a>
+        |
+        <a href="#">Apply to YC</a>
+        |
+        <a href="#">Contact</a>
+      </span>
+    </div>
+    <div>
+      <form action="">
+        <div class="form">
+          <label for="search">Search:</label>
+          <input type="text" id="search">
+        </div>
+      </form>
+    </div>
+  </div>
+</footer>
